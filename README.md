@@ -1,4 +1,7 @@
 # COMP 303 Term Project - Cryptocurrency Prediction
 
-![Main](tkinter.png?raw=true "Main")
+Flask:
+![flask](flask.png?raw=true "flask")
 
+Tkinter:
+![tkinter](tkinter.png?raw=true "tkinter")
