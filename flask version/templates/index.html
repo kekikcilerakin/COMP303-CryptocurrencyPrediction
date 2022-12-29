@@ -9,18 +9,29 @@
 
 <body>
 
-    <form method = "POST" action = "{{ url_for('form') }}">
-        {{ form.csrf_token }}
-        {{ form.cryptocurrency }} 
-        to USD
-        <br>
-        Select the starting date: {{ form.date }}
-        <br>
-        <input type = "submit" value = "Predict">
-        <br>
-        <img src="{{ url_for('static', filename='plot.png') }}">
-    </form>
-    
+
+
+    <div id="container">
+        <div id="square">
+            <form method="POST" action="{{ url_for('form') }}">
+                {{ form.csrf_token }}
+                <div id="dropdown">
+                    {{ form.cryptocurrency }}
+                    to USD
+                </div>
+
+                <div id="datepicker">
+                    Select the starting date:
+                    <br>
+                    {{ form.date }}
+                </div>
+
+                <input id="btn" type="submit" value="Predict">
+
+                <img src="{{ url_for('static', filename='plot.png') }}">
+            </form>
+        </div>
+    </div>
 
 
 
